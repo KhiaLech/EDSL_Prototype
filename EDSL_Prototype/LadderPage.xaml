@@ -1,0 +1,41 @@
+﻿<Page x:Class="EDSL_Prototype.LadderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EDSL_Prototype"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LadderPage" Height="450" Width="800" Background="White">
+
+    <Grid>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="358" Margin="121,35,0,0" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select Division" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="101" Height="23" SelectionChanged="ComboBox_SelectionChanged1">
+            <ComboBoxItem Content="Division 01"></ComboBoxItem>
+            <ComboBoxItem Content="Division 02"></ComboBoxItem>
+            <ComboBoxItem Content="Division 03"></ComboBoxItem>
+            <ComboBoxItem Content="Division 04"></ComboBoxItem>
+        </ComboBox>
+        
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select Round" HorizontalAlignment="Left" Margin="126,48,0,0" VerticalAlignment="Top" Width="101" Height="23" SelectionChanged="ComboBox_SelectionChanged1">
+            <ComboBoxItem Content="Round 01"></ComboBoxItem>
+            <ComboBoxItem Content="Round 02"></ComboBoxItem>
+            <ComboBoxItem Content="Round 03"></ComboBoxItem>
+            <ComboBoxItem Content="Round 04"></ComboBoxItem>
+            <ComboBoxItem Content="Round 05"></ComboBoxItem>
+            <ComboBoxItem Content="Round 06"></ComboBoxItem>
+            <ComboBoxItem Content="Round 07"></ComboBoxItem>
+            <ComboBoxItem Content="Round 08"></ComboBoxItem>
+            <ComboBoxItem Content="Round 09"></ComboBoxItem>
+            <ComboBoxItem Content="Round 10"></ComboBoxItem>
+            <ComboBoxItem Content="Round 11"></ComboBoxItem>
+            <ComboBoxItem Content="Round 12"></ComboBoxItem>
+        </ComboBox>
+        
+        <Button Content="View Ladder" HorizontalAlignment="Left" Margin="68,92,0,0" VerticalAlignment="Top" Width="69" Height="19" Click="buttonclickDiv1Ladder" RenderTransformOrigin="0.597,2.068"/>
+        <TextBlock Name="LadderHeader" HorizontalAlignment="Center" Margin="246,26,199,0" TextWrapping="Wrap" Text="EDSL 2019 - 2020 Division 1 Ladder" VerticalAlignment="Top" Height="31" Width="355" FontWeight="Heavy" FontSize="20" Visibility="Hidden"/>
+        <TextBlock Name="LadderRoundHeader" HorizontalAlignment="Center" Margin="331,62,114,0" TextWrapping="Wrap" Text="Round 1 Ladder" VerticalAlignment="Top" Height="31" Width="355" FontWeight="Heavy" FontSize="20" Visibility="Hidden"/>
+        <Image Name="exampleLadder" Margin="68,116,85,29.6" Source="EDSL_Ladder.jpg" Stretch="Fill" Visibility="Hidden"/>
+
+    </Grid>
+</Page>

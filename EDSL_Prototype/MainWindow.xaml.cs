@@ -24,5 +24,30 @@ namespace EDSL_Prototype
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void buttonclickResults(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ResultsPage();
+        }
+
+        private void buttonclickSeason(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new SeasonPage();
+        }
+
+        private void buttonclickLadder(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new LadderPage();
+        }
+
+        private void buttonclickDraw(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new DrawPage();
+        }
     }
 }

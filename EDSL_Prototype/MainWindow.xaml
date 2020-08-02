@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EDSL_Prototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Eastern District Soccer League" Height="555.000" Width="1000.000">
+
+
+    <Grid Margin="1,2,-1.6,-2.8">
+        <DataGrid HorizontalAlignment="Left" Height="499" Margin="10,0,0,0" VerticalAlignment="Top" Width="106" Background="DarkOliveGreen"/>
+        <Button Content="Results" HorizontalAlignment="Left" Margin="24,61,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,0.818" Height="31" Click="buttonclickResults"/>
+        <Button Content="Season" HorizontalAlignment="Left" Margin="24,110,0,0" VerticalAlignment="Top" Width="75" Height="31" Click="buttonclickSeason"/>
+        <Button Content="Ladder" HorizontalAlignment="Left" Margin="24,160,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="buttonclickLadder"/>
+        <Button Content="Draw" HorizontalAlignment="Left" Margin="24,212,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="buttonclickDraw"/>
+        <Button Content="Club" HorizontalAlignment="Left" Margin="24,260,0,0" VerticalAlignment="Top" Width="75" Height="30"/>
+        <Button Content="Players" HorizontalAlignment="Left" Margin="24,308,0,0" VerticalAlignment="Top" Width="75" Height="30"/>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="489" Margin="142,10,0,0" VerticalAlignment="Top" NavigationUIVisibility="Hidden" Width="825"/>
     </Grid>
 </Window>

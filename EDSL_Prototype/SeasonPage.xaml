@@ -1,0 +1,28 @@
+﻿<Page x:Class="EDSL_Prototype.SeasonPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EDSL_Prototype"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SeasonPage" Height="433.021" Width="640.775" Background="White">
+
+    <Grid>
+        <Frame x:Name="Main" HorizontalAlignment="Left" Height="358" Margin="121,35,0,0" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="158,111,0,0" TextWrapping="Wrap" Text="Enter SeasonID " VerticalAlignment="Top" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,112,0,0" TextWrapping="Wrap" Text="SeasonID: " VerticalAlignment="Top" FontWeight="Bold" Height="23" Width="65"/>
+        <DatePicker HorizontalAlignment="Left" Margin="158,150,0,0" VerticalAlignment="Top" Height="32" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,156,0,0" TextWrapping="Wrap" Text="Season Start Date:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="114"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,190,0,0" TextWrapping="Wrap" Text="Season End Date:" VerticalAlignment="Top" FontWeight="Bold" Height="23" Width="107"/>
+        <DatePicker HorizontalAlignment="Left" Margin="158,189,0,0" VerticalAlignment="Top" Height="32" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,235,0,0" TextWrapping="Wrap" Text="No. of Rounds:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="92"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="158,234,0,0" TextWrapping="Wrap" Text="Enter No. Rounds " VerticalAlignment="Top" Width="112" />
+        <Button Content="Generate Date List" HorizontalAlignment="Left" Margin="38,296,0,0" VerticalAlignment="Top" Width="100" Click="genDateList"/>
+        <Label Content="Season Date List:" HorizontalAlignment="Left" Margin="361,53,0,0" VerticalAlignment="Top" Width="155" FontWeight="Bold" FontSize="15" Height="29"/>
+        <Image Name="exampleDateList" Margin="361,87,51.8,39.8" Source="EDSL_datelist2.png" Stretch="Fill" Visibility="Visible"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Setup Season" VerticalAlignment="Top" Height="44" Width="260" FontSize="25" FontWeight="ExtraBold"/>
+        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="306" Margin="361,87,0,0" VerticalAlignment="Top" Width="228"/>
+        <Button Content="Redo" HorizontalAlignment="Left" Margin="181,296,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Page>
