@@ -31,30 +31,20 @@ namespace EDSL_Prototype
 
         private void genDateList(object sender, RoutedEventArgs e)
         {
-            //exampleDateList.Visibility = Visibility.Visible;
+
             DateList.Visibility = Visibility.Visible;
             roundnum.Visibility = Visibility.Visible;
             deletebutton.Visibility = Visibility.Visible;
             confirmbutton.Visibility = Visibility.Visible;
 
-
-
         }
 
         private void Direct2DrawScreen(object sender, RoutedEventArgs e)
         {
-            //exampleDateList.Visibility = Visibility.Visible;
+           
             drawmessage.Visibility = Visibility.Visible;
-            
-
-
 
         }
-
-        //private void buttonclickConfirm(object sender, RoutedEventArgs e)
-        //{
-        //    DateList.Items.Add(enterDates.Text);
-        //}
 
         private void buttonclickRemoveDate(object sender, RoutedEventArgs e)
         {
