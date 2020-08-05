@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,13 @@ namespace EDSL_Prototype
     /// </summary>
     public partial class MainWindow : Window
     {
+
+     
         public MainWindow()
         {
             InitializeComponent();
+
+ 
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -49,5 +54,17 @@ namespace EDSL_Prototype
         {
             Main.Content = new DrawPage();
         }
+
+        private void buttonclickClub(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ClubPage();
+        }
+
+        private void buttonclickPlayers(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new PlayersPage();
+        }
     }
 }
+
+

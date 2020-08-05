@@ -8,21 +8,113 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SeasonPage" Height="433.021" Width="640.775" Background="White">
 
-    <Grid>
+    <Grid Margin="0,10,-0.2,-1.2">
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="358" Margin="121,35,0,0" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="158,111,0,0" TextWrapping="Wrap" Text="Enter SeasonID " VerticalAlignment="Top" Width="98"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,112,0,0" TextWrapping="Wrap" Text="SeasonID: " VerticalAlignment="Top" FontWeight="Bold" Height="23" Width="65"/>
-        <DatePicker HorizontalAlignment="Left" Margin="158,150,0,0" VerticalAlignment="Top" Height="32" Width="112"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,156,0,0" TextWrapping="Wrap" Text="Season Start Date:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="114"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,190,0,0" TextWrapping="Wrap" Text="Season End Date:" VerticalAlignment="Top" FontWeight="Bold" Height="23" Width="107"/>
-        <DatePicker HorizontalAlignment="Left" Margin="158,189,0,0" VerticalAlignment="Top" Height="32" Width="112"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,235,0,0" TextWrapping="Wrap" Text="No. of Rounds:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="92"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="158,234,0,0" TextWrapping="Wrap" Text="Enter No. Rounds " VerticalAlignment="Top" Width="112" />
-        <Button Content="Generate Date List" HorizontalAlignment="Left" Margin="38,296,0,0" VerticalAlignment="Top" Width="100" Click="genDateList"/>
-        <Label Content="Season Date List:" HorizontalAlignment="Left" Margin="361,53,0,0" VerticalAlignment="Top" Width="155" FontWeight="Bold" FontSize="15" Height="29"/>
-        <Image Name="exampleDateList" Margin="361,87,51.8,39.8" Source="EDSL_datelist2.png" Stretch="Fill" Visibility="Visible"/>
+
+
+
+        <TextBox HorizontalAlignment="Left" Height="28" Margin="158,54,0,0" TextWrapping="Wrap" Text="Enter SeasonID " VerticalAlignment="Top" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,61,0,0" TextWrapping="Wrap" Text="SeasonID: " VerticalAlignment="Top" FontWeight="Bold" Height="23" Width="65"/>
+        <DatePicker HorizontalAlignment="Left" Margin="158,139,0,0" VerticalAlignment="Top" Height="28" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,145,0,0" TextWrapping="Wrap" Text="Season Start Date:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="114"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,195,0,0" TextWrapping="Wrap" Text="No. of Rounds:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="92"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="158,193,0,0" TextWrapping="Wrap" Text="Enter No. Rounds " VerticalAlignment="Top" Width="112" />
+        <Button Content="Generate Date List" HorizontalAlignment="Left" Margin="76,222,0,0" VerticalAlignment="Top" Width="100" Click="genDateList"/>
+        <Label Content="Season Date List:" HorizontalAlignment="Left" Margin="361,25,0,0" VerticalAlignment="Top" Width="155" FontWeight="Bold" FontSize="15" Height="29"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Setup Season" VerticalAlignment="Top" Height="44" Width="260" FontSize="25" FontWeight="ExtraBold"/>
-        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="306" Margin="361,87,0,0" VerticalAlignment="Top" Width="228"/>
-        <Button Content="Redo" HorizontalAlignment="Left" Margin="181,296,0,0" VerticalAlignment="Top" Width="75"/>
+
+
+        <ListBox Name="DateList" Visibility="Hidden" HorizontalAlignment="Right" Height="319" Margin="0,54,114,0" VerticalAlignment="Top" Width="119">
+            <ListBoxItem Content="03/11/2018"></ListBoxItem>
+            <ListBoxItem Content="10/11/2018"></ListBoxItem>
+            <ListBoxItem Content="17/11/2018"></ListBoxItem>
+            <ListBoxItem Content="24/11/2018"></ListBoxItem>
+            <ListBoxItem Content="1/12/2018"></ListBoxItem>
+            <ListBoxItem Content="8/12/2018"></ListBoxItem>
+            <ListBoxItem Content="15/12/2018"></ListBoxItem>
+            <ListBoxItem Content="12/01/2019"></ListBoxItem>
+            <ListBoxItem Content="19/01/2019"></ListBoxItem>
+            <ListBoxItem Content="2/02/2019"></ListBoxItem>
+            <ListBoxItem Content="9/02/2019"></ListBoxItem>
+            <ListBoxItem Content="16/02/2019"></ListBoxItem>
+            <ListBoxItem Content="23/02/2019"></ListBoxItem>
+            <ListBoxItem Content="2/03/2019"></ListBoxItem>
+            <ListBoxItem Content="16/03/2019"></ListBoxItem>
+            <ListBoxItem Content="23/03/2019"></ListBoxItem>
+            <ListBoxItem Content="30/03/2019"></ListBoxItem>
+            <ListBoxItem Content="06/04/2019"></ListBoxItem>
+            <ListBoxItem Content="13/04/2019"></ListBoxItem>
+            <ListBoxItem Content="20/04/2019"></ListBoxItem>
+            <ListBoxItem Content="27/04/2019"></ListBoxItem>
+            <ListBoxItem Content="04/05/2019"></ListBoxItem>
+            <ListBoxItem Content="11/05/2019"></ListBoxItem>
+            <ListBoxItem Content="18/05/2019"></ListBoxItem>
+            <ListBoxItem Content="15/05/2019"></ListBoxItem>
+            <ListBoxItem Content="22/05/2019"></ListBoxItem>
+        </ListBox>
+
+        <ListBox Name="roundnum" Visibility="Hidden" HorizontalAlignment="Right" Height="339" Margin="0,54,233,0" VerticalAlignment="Top" Width="36">
+            <ListBoxItem Content="R1"/>
+            <ListBoxItem Content="R2"/>
+            <ListBoxItem Content="R3"/>
+            <ListBoxItem Content="R4"/>
+            <ListBoxItem Content="R5"/>
+            <ListBoxItem Content="R6"/>
+            <ListBoxItem Content="R7"/>
+            <ListBoxItem Content="R8"/>
+            <ListBoxItem Content="R9"/>
+            <ListBoxItem Content="R10"/>
+            <ListBoxItem Content="R11"/>
+            <ListBoxItem Content="R12"/>
+            <ListBoxItem Content="R13"/>
+            <ListBoxItem Content="R14"/>
+            <ListBoxItem Content="R15"/>
+            <ListBoxItem Content="R16"/>
+        </ListBox>
+
+        <Button Name="deletebutton" Content="Delete" Visibility="Hidden" HorizontalAlignment="Left" Margin="427,378,0,0" VerticalAlignment="Top" Width="75" Click="buttonclickRemoveDate"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,98,0,0" TextWrapping="Wrap" Text="Division:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="114"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="158,96,0,0" TextWrapping="Wrap" Text="Enter Divison (1-3)" VerticalAlignment="Top" Width="112" />
+        <Button Name="confirmbutton" Content="Confirm" Visibility="Hidden" HorizontalAlignment="Left" Margin="427,402,0,0" VerticalAlignment="Top" Width="75" Click="Direct2DrawScreen"/>
+        <TextBlock Name="drawmessage" Visibility="Hidden" HorizontalAlignment="Left" Margin="158,361,0,0" TextWrapping="Wrap" Text="To view the draw for this season, please head to the &quot;draw&quot; tab." VerticalAlignment="Top" Height="36" Width="185" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,265,0,0" TextWrapping="Wrap" Text="Existing Season:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="92"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,287,0,0" TextWrapping="Wrap" Text="Existing Division:" VerticalAlignment="Top" FontWeight="Bold" Height="22" Width="97"/>
+
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select Division" HorizontalAlignment="Left" Margin="126,286,0,0" VerticalAlignment="Top" Width="101" Height="23">
+            <ComboBoxItem Content="Division 01"></ComboBoxItem>
+            <ComboBoxItem Content="Division 02"></ComboBoxItem>
+            <ComboBoxItem Content="Division 03"></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select Season" HorizontalAlignment="Left" Margin="126,263,0,0" VerticalAlignment="Top" Width="101" Height="23" >
+            <ComboBoxItem Content="EDSL2017"></ComboBoxItem>
+            <ComboBoxItem Content="EDSL2018"></ComboBoxItem>
+        </ComboBox>
+        
+        
+        <Button Content="Show Dates" HorizontalAlignment="Left" Margin="32,309,0,0" VerticalAlignment="Top" Width="65" Height="18" Click="showDates"/>
+
+
+        <ListBox Name="datelistFixed" Visibility="Hidden" HorizontalAlignment="Right" Height="319" Margin="0,54,114,0" VerticalAlignment="Top" Width="119">
+            <ListBoxItem Content="03/11/2018"></ListBoxItem>
+            <ListBoxItem Content="10/11/2018"></ListBoxItem>
+            <ListBoxItem Content="17/11/2018"></ListBoxItem>
+            <ListBoxItem Content="24/11/2018"></ListBoxItem>
+            <ListBoxItem Content="1/12/2018"></ListBoxItem>
+            <ListBoxItem Content="8/12/2018"></ListBoxItem>
+            <ListBoxItem Content="15/12/2018"></ListBoxItem>
+            <ListBoxItem Content="12/01/2019"></ListBoxItem>
+            <ListBoxItem Content="19/01/2019"></ListBoxItem>
+            <ListBoxItem Content="2/02/2019"></ListBoxItem>
+            <ListBoxItem Content="9/02/2019"></ListBoxItem>
+            <ListBoxItem Content="16/02/2019"></ListBoxItem>
+            <ListBoxItem Content="23/02/2019"></ListBoxItem>
+            <ListBoxItem Content="2/03/2019"></ListBoxItem>
+            <ListBoxItem Content="16/03/2019"></ListBoxItem>
+            <ListBoxItem Content="23/03/2019"></ListBoxItem>
+        </ListBox>
+
+
+
     </Grid>
 </Page>

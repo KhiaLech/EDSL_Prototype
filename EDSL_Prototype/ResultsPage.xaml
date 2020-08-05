@@ -10,6 +10,79 @@
 
     <Grid>
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="358" Margin="121,35,0,0" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
-        <Label Content="Results" HorizontalAlignment="Left" Margin="292,178,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,69,0,0" TextWrapping="Wrap" Text="Select Round:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="236,72,0,0" TextWrapping="Wrap" Text="Select Division:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,69,0,0" TextWrapping="Wrap" Text="Select Season:" VerticalAlignment="Top"/>
+        <Label Content="Round Results" HorizontalAlignment="Left" Margin="55,17,0,0" VerticalAlignment="Top" Height="41" Width="218" FontWeight="ExtraBold" FontSize="25"/>
+
+
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select Round" HorizontalAlignment="Left" Margin="512,66,0,0" VerticalAlignment="Top" Width="101" Height="23" >
+            <ComboBoxItem Content="Round 1"></ComboBoxItem>
+            <ComboBoxItem Content="Round 2"></ComboBoxItem>
+            <ComboBoxItem Content="Round 3"></ComboBoxItem>
+            <ComboBoxItem Content="Round 4"></ComboBoxItem>
+            <ComboBoxItem Content="Round 5"></ComboBoxItem>
+            <ComboBoxItem Content="Round 6"></ComboBoxItem>
+            <ComboBoxItem Content="Round 7"></ComboBoxItem>
+            <ComboBoxItem Content="Round 8"></ComboBoxItem>
+            <ComboBoxItem Content="Round 9"></ComboBoxItem>
+            <ComboBoxItem Content="Round 10"></ComboBoxItem>
+            <ComboBoxItem Content="Round 11"></ComboBoxItem>
+            <ComboBoxItem Content="Round 12"></ComboBoxItem>
+            <ComboBoxItem Content="Round 13"></ComboBoxItem>
+            <ComboBoxItem Content="Round 14"></ComboBoxItem>
+            <ComboBoxItem Content="Round 15"></ComboBoxItem>
+            <ComboBoxItem Content="Round 16"></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select Division" HorizontalAlignment="Left" Margin="320,69,0,0" VerticalAlignment="Top" Width="101" Height="23" >
+            <ComboBoxItem Content="Division 01"></ComboBoxItem>
+            <ComboBoxItem Content="Division 02"></ComboBoxItem>
+            <ComboBoxItem Content="Division 03"></ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="Select SeasonID" HorizontalAlignment="Left" Margin="104,69,0,0" VerticalAlignment="Top" Width="115" Height="23" >
+            <ComboBoxItem Content="EDSL2017"></ComboBoxItem>
+            <ComboBoxItem Content="EDSL2018"></ComboBoxItem>
+            <ComboBoxItem Content="EDSL2019"></ComboBoxItem>
+        </ComboBox>
+
+        <Button Content="View Results" HorizontalAlignment="Left" Margin="273,109,0,0" VerticalAlignment="Top" Width="75" Click="roundresults"/>
+
+        <ListBox Name="hometeams" Visibility="Hidden" HorizontalAlignment="Left" Height="147" Margin="161,213,0,0" VerticalAlignment="Top" Width="137">
+            <ListBoxItem Content="Wantirna-A "></ListBoxItem>
+            <ListBoxItem Content="Mount Waverly-A  "></ListBoxItem>
+            <ListBoxItem Content="Scorsby-A  "></ListBoxItem>
+            <ListBoxItem Content="Mitcham  "></ListBoxItem>
+            <ListBoxItem Content="Ringwood-A  "></ListBoxItem>
+            <ListBoxItem Content="Wonga Park-A  "></ListBoxItem>
+            <ListBoxItem Content="Mount Evelyn-A  "></ListBoxItem>
+        </ListBox>
+
+        <ListBox Name="awayteams" Visibility="Hidden" HorizontalAlignment="Left" Height="147" Margin="361,213,0,0" VerticalAlignment="Top" Width="141">
+            <ListBoxItem Content="Bye"></ListBoxItem>
+            <ListBoxItem Content=" Oakleigh-A"></ListBoxItem>
+            <ListBoxItem Content="Ferntree Gully-A"></ListBoxItem>
+            <ListBoxItem Content="Murrumbeena-A"></ListBoxItem>
+            <ListBoxItem Content="Beaconsfield Upper-A"></ListBoxItem>
+            <ListBoxItem Content="Belgrave-A"></ListBoxItem>
+            <ListBoxItem Content=" LilyDale-A"></ListBoxItem>
+        </ListBox>
+
+        <ListBox Name="gamescores" Visibility="Hidden" HorizontalAlignment="Left" Height="147" Margin="298,213,0,0" VerticalAlignment="Top" Width="63">
+            <ListBoxItem Content="     -"></ListBoxItem>
+            <ListBoxItem Content="    2-0"></ListBoxItem>
+            <ListBoxItem Content="    1-3"></ListBoxItem>
+            <ListBoxItem Content="    0-0"></ListBoxItem>
+            <ListBoxItem Content="    4-0"></ListBoxItem>
+            <ListBoxItem Content="    2-2"></ListBoxItem>
+            <ListBoxItem Content="    1-2"></ListBoxItem>
+        </ListBox>
+
+        <Label Name="home"  Visibility="Hidden" Content="Home" HorizontalAlignment="Left" Margin="199,182,0,0" VerticalAlignment="Top" Width="57" FontWeight="Medium"/>
+        <Label Name="away" Visibility="Hidden" Content="Away" HorizontalAlignment="Left" Margin="399,182,0,0" VerticalAlignment="Top" Width="47" FontWeight="Medium"/>
+        <Label Name="score" Visibility="Hidden" Content="Score" HorizontalAlignment="Left" Margin="302,182,0,0" VerticalAlignment="Top" Width="46" FontWeight="Medium"/>
+        <Label Name="resultspopupheader" Visibility="Hidden" Content="Round 1 Results" HorizontalAlignment="Left" Margin="273,151,0,0" VerticalAlignment="Top" Width="125" FontWeight="Bold"/>
+        <Button Name="go2ladder"  Visibility="Hidden" Content="Go To Ladder Screen" HorizontalAlignment="Left" Margin="279,378,0,0" VerticalAlignment="Top" Width="119"/>
     </Grid>
 </Page>

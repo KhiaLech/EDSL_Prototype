@@ -55,11 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClubPage.xaml.cs">
+      <DependentUpon>ClubPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DrawPage.xaml.cs">
       <DependentUpon>DrawPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LadderPage.xaml.cs">
       <DependentUpon>LadderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayersPage.xaml.cs">
+      <DependentUpon>PlayersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResultsPage.xaml.cs">
       <DependentUpon>ResultsPage.xaml</DependentUpon>
@@ -67,6 +73,10 @@
     <Compile Include="SeasonPage.xaml.cs">
       <DependentUpon>SeasonPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="ClubPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DrawPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -87,6 +97,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PlayersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResultsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

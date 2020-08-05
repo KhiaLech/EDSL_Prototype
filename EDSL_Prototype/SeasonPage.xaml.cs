@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,18 +19,52 @@ namespace EDSL_Prototype
     /// <summary>
     /// Interaction logic for SeasonPage.xaml
     /// </summary>
+    /// 
+
     public partial class SeasonPage : Page
     {
         public SeasonPage()
         {
             InitializeComponent();
+
         }
 
         private void genDateList(object sender, RoutedEventArgs e)
         {
-            exampleDateList.Visibility = Visibility.Visible;
+            //exampleDateList.Visibility = Visibility.Visible;
+            DateList.Visibility = Visibility.Visible;
+            roundnum.Visibility = Visibility.Visible;
+            deletebutton.Visibility = Visibility.Visible;
+            confirmbutton.Visibility = Visibility.Visible;
 
 
+
+        }
+
+        private void Direct2DrawScreen(object sender, RoutedEventArgs e)
+        {
+            //exampleDateList.Visibility = Visibility.Visible;
+            drawmessage.Visibility = Visibility.Visible;
+            
+
+
+
+        }
+
+        //private void buttonclickConfirm(object sender, RoutedEventArgs e)
+        //{
+        //    DateList.Items.Add(enterDates.Text);
+        //}
+
+        private void buttonclickRemoveDate(object sender, RoutedEventArgs e)
+        {
+            DateList.Items.Remove(DateList.SelectedItem);
+        }
+
+        private void showDates(object sender, RoutedEventArgs e)
+        {
+            roundnum.Visibility = Visibility.Visible;
+            datelistFixed.Visibility = Visibility.Visible;
         }
     }
 }

@@ -32,10 +32,11 @@
             <ComboBoxItem Content="Round 12"></ComboBoxItem>
         </ComboBox>
         
-        <Button Content="View Ladder" HorizontalAlignment="Left" Margin="68,92,0,0" VerticalAlignment="Top" Width="69" Height="19" Click="buttonclickDiv1Ladder" RenderTransformOrigin="0.597,2.068"/>
+        <Button Content="View Ladder" HorizontalAlignment="Left" Margin="25,76,0,0" VerticalAlignment="Top" Width="69" Height="19" Click="buttonclickDiv1Ladder" RenderTransformOrigin="0.597,2.068"/>
         <TextBlock Name="LadderHeader" HorizontalAlignment="Center" Margin="246,26,199,0" TextWrapping="Wrap" Text="EDSL 2019 - 2020 Division 1 Ladder" VerticalAlignment="Top" Height="31" Width="355" FontWeight="Heavy" FontSize="20" Visibility="Hidden"/>
         <TextBlock Name="LadderRoundHeader" HorizontalAlignment="Center" Margin="331,62,114,0" TextWrapping="Wrap" Text="Round 1 Ladder" VerticalAlignment="Top" Height="31" Width="355" FontWeight="Heavy" FontSize="20" Visibility="Hidden"/>
         <Image Name="exampleLadder" Margin="68,116,85,29.6" Source="EDSL_Ladder.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Button Content="Print Ladder" HorizontalAlignment="Left" Margin="121,76,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Page>

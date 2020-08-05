@@ -1,7 +1,6 @@
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\bin\Debug\EDSL_Prototype.exe.config
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\bin\Debug\EDSL_Prototype.exe
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\bin\Debug\EDSL_Prototype.pdb
-C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\EDSL_Prototype.csprojAssemblyReference.cache
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\MainWindow.g.cs
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\App.g.cs
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\EDSL_Prototype_MarkupCompile.cache
@@ -20,3 +19,8 @@ C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\SeasonPa
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\DrawPage.baml
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\LadderPage.baml
 C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\SeasonPage.baml
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\ClubPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\ClubPage.baml
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\PlayersPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\PlayersPage.baml
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Debug\EDSL_Prototype.csprojAssemblyReference.cache

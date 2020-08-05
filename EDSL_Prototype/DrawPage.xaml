@@ -14,11 +14,11 @@
             <ComboBoxItem Content="Division 01"></ComboBoxItem>
             <ComboBoxItem Content="Division 02"></ComboBoxItem>
             <ComboBoxItem Content="Division 03"></ComboBoxItem>
-            <ComboBoxItem Content="Division 04"></ComboBoxItem>
         </ComboBox>
         <Button Content="View Draw" HorizontalAlignment="Left" Margin="128,48,0,0" VerticalAlignment="Top" Width="62" Height="19" Click="buttonclickDiv1Draw"/>
         <Image Name="exampleDraw" Margin="48,76,39.2,50.8" Source="EDSL_draw.png" Stretch="Fill" Visibility="Hidden"/>
         <TextBlock Name="DrawHeader" HorizontalAlignment="Center" Margin="289,26,156.2,0" TextWrapping="Wrap" Text="EDSL 2019 - 2020 Division 1 Season Draw" VerticalAlignment="Top" Height="31" Width="355" FontWeight="Heavy" FontSize="20" Visibility="Hidden"/>
         <Image Name="exampleGrounds" Margin="48,362,46.2,-39.2" Source="EDSL_grounds.png" Stretch="Fill" Visibility="Hidden"/>
+        <Button Content="Print Draw" HorizontalAlignment="Left" Margin="209,48,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Page>

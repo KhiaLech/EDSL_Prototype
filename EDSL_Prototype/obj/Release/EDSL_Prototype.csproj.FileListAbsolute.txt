@@ -1,0 +1,12 @@
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\EDSL_Prototype.csprojAssemblyReference.cache
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\ClubPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\DrawPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\LadderPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\MainWindow.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\PlayersPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\ResultsPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\SeasonPage.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\App.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\EDSL_Prototype_MarkupCompile.cache
+C:\Users\61478\Documents\GitHub\EDSL_Prototype\EDSL_Prototype\obj\Release\EDSL_Prototype_MarkupCompile.lref

@@ -24,5 +24,19 @@ namespace EDSL_Prototype
         {
             InitializeComponent();
         }
+
+        private void roundresults(object sender, RoutedEventArgs e)
+        {
+            hometeams.Visibility = Visibility.Visible;
+            awayteams.Visibility = Visibility.Visible;
+            gamescores.Visibility = Visibility.Visible;
+            home.Visibility = Visibility.Visible;
+            away.Visibility = Visibility.Visible;
+            score.Visibility = Visibility.Visible;
+            resultspopupheader.Visibility = Visibility.Visible;
+            go2ladder.Visibility = Visibility.Visible;
+        }
+
+    
     }
 }
